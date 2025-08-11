@@ -1,0 +1,32 @@
+{
+    "name": "@epaolillo/react-crud",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "UI reusable en React",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.cjs"
+      }
+    },
+    "files": [
+      "dist"
+    ],
+    "sideEffects": false,
+    "peerDependencies": {
+      "react": ">=18",
+      "react-dom": ">=18"
+    },
+    "devDependencies": {
+      "vite": "^5.0.0",
+      "@vitejs/plugin-react": "^4.1.0"
+    },
+    "scripts": {
+      "build": "vite build",
+      "dev": "vite",
+      "clean": "rm -rf dist"
+    }
+  }
+  

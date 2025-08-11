@@ -1,0 +1,140 @@
+/* Skeleton Field Styles */
+.skeleton-field {
+    width: 100%;
+}
+
+.skeleton-label {
+    height: 16px;
+    width: 120px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.skeleton-input,
+.skeleton-textarea,
+.skeleton-select,
+.skeleton-color,
+.skeleton-custom {
+    height: 38px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.skeleton-textarea {
+    height: auto;
+    min-height: 72px;
+}
+
+.skeleton-select {
+    position: relative;
+}
+
+.skeleton-select::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #c0c0c0;
+}
+
+.skeleton-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skeleton-checkbox::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+}
+
+.skeleton-checkbox::after {
+    content: '';
+    height: 16px;
+    width: 100px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+}
+
+.skeleton-color {
+    width: 60px;
+    height: 38px;
+    border-radius: 6px;
+}
+
+.skeleton-editor {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.skeleton-editor-toolbar {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.skeleton-tool {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+}
+
+.skeleton-editor-content {
+    height: 200px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+}
+
+.skeleton-help-text {
+    height: 14px;
+    width: 200px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 3px;
+    margin-top: 6px;
+}
+
+/* Animation */
+.skeleton-animate {
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skeleton-label {
+        width: 100px;
+    }
+    
+    .skeleton-help-text {
+        width: 150px;
+    }
+}

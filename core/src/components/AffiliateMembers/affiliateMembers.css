@@ -1,0 +1,152 @@
+.affiliate-members {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.affiliate-members-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 15px;
+}
+
+.affiliate-members-header h3 {
+    margin: 0;
+    color: #495057;
+}
+
+.affiliate-members-loading {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+}
+
+.affiliate-members-add-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+}
+
+.affiliate-members-add-form .form-group {
+    margin-bottom: 15px;
+}
+
+.affiliate-members-add-form label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.permissions-checkboxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.permission-checkbox {
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.permission-checkbox input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.permission-checkbox label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.permission-checkbox label small {
+    display: block;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.affiliate-members-list {
+    min-height: 200px;
+}
+
+.no-members {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+}
+
+.no-members i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.no-members p {
+    margin: 0;
+}
+
+.members-table {
+    margin-top: 20px;
+}
+
+.permissions-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.permissions-display .badge {
+    font-size: 0.75em;
+}
+
+.table th {
+    background: #f8f9fa;
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .affiliate-members {
+        padding: 15px;
+    }
+    
+    .affiliate-members-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .permissions-checkboxes {
+        grid-template-columns: 1fr;
+    }
+}
